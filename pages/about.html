@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quán ăn - Foodie Việt</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/app.js" defer></script>
+    <title>Foodie Việt | Khám phá quán ăn</title>
+    <meta name="description" content="Tìm hiểu thông tin các quán ăn, địa chỉ, giờ mở cửa, số điện thoại và những món đặc trưng tại Foodie Việt.">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Khám phá quán ăn - Foodie Việt">
+    <meta property="og:description" content="Khám phá những địa điểm ăn uống và quán ăn được giới thiệu tại Foodie Việt.">
+    <meta property="og:image" content="https://YOUR-USERNAME.github.io/RWD_Lab5_MiniSite/assets/img/optimized/1.webp">
+    <meta property="og:url" content="https://YOUR-USERNAME.github.io/RWD_Lab5_MiniSite/pages/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<header class="header">
+    <div class="container navbar">
+        <a href="../index.html" class="logo">
+            <span class="logo-icon">FV</span>
+            Foodie <span>Việt</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Mở menu" aria-expanded="false">☰</button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="../index.html">Trang chủ</a>
+            <a href="products.html">Món ăn</a>
+            <a href="about.html" class="active">Quán ăn</a>
+            <a href="contact.html">Liên hệ</a>
+            <a href="order.html">Đặt món</a>
+            <button class="theme-toggle" id="themeToggle">🌙 Chế độ tối</button>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-banner">
+        <div class="container">
+            <span class="section-label">VỀ FOODIE VIỆT</span>
+            <h1>Khám phá thế giới ẩm thực</h1>
+            <p>Tìm hiểu các địa điểm ăn uống và món ngon nổi bật.</p>
+
+            <div class="breadcrumb">
+                <a href="../index.html">Trang chủ</a>
+                <span>/</span>
+                <span>Quán ăn</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container about-layout">
+
+            <div class="about-image">
+                <picture>
+                    <source srcset="../assets/img/optimized/9.webp"
+                            type="image/webp">
+
+                    <img src="../assets/img/original/9.jpg"
+                        alt="Không gian ẩm thực Foodie Việt">
+                </picture>
+            </div>
+
+            <div class="about-text">
+                <span class="section-label">GIỚI THIỆU</span>
+                <h2>Kết nối thực khách với những món ngon</h2>
+
+                <p>
+                    Foodie Việt là website giới thiệu các địa điểm
+                    ăn uống và những món ăn hấp dẫn.
+                </p>
+
+                <p>
+                    Người dùng có thể xem thông tin quán ăn,
+                    tìm kiếm món ăn theo danh mục, tham khảo giá
+                    và gửi yêu cầu đặt món.
+                </p>
+
+                <a href="products.html" class="btn btn-primary">
+                    Khám phá thực đơn
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section restaurants-section">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">ĐỊA ĐIỂM ĂN UỐNG</span>
+                    <h2>Danh sách quán ăn</h2>
+                    <p>Bấm vào từng quán để xem thông tin chi tiết.</p>
+                </div>
+            </div>
+
+            <div class="restaurant-grid" id="restaurantGrid"></div>
+
+            <p class="demo-note">
+                Lưu ý: Thông tin tên quán, địa chỉ, số điện thoại
+                và giờ hoạt động là dữ liệu minh họa cho bài tập.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div>
+            <a href="../index.html" class="logo footer-logo">
+                <span class="logo-icon">FV</span>
+                Foodie <span>Việt</span>
+            </a>
+            <p>Khám phá quán ngon – Thưởng thức món ngon.</p>
+        </div>
+
+        <div>
+            <h3>Liên kết</h3>
+            <a href="../index.html">Trang chủ</a>
+            <a href="products.html">Món ăn</a>
+            <a href="about.html">Quán ăn</a>
+            <a href="contact.html">Liên hệ</a>
+            <a href="order.html">Đặt món</a>
+        </div>
+
+        <div>
+            <h3>Liên hệ</h3>
+            <p>Hotline: 0900 000 001</p>
+            <p>Email: foodie@example.com</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        © <span class="current-year">2026</span> Foodie Việt.
+    </div>
+</footer>
+
+<button id="backToTop" class="back-to-top"
+        aria-label="Quay lại đầu trang" title="Quay lại đầu trang">↑</button>
+
+</body>
+</html>

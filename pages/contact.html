@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Foodie Việt</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/app.js" defer></script>
+    <title>Liên hệ - Foodie Việt</title>
+    <meta name="description" content="Liên hệ Foodie Việt để gửi câu hỏi, góp ý và tìm hiểu thêm thông tin về các quán ăn và món ngon.">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Liên hệ - Foodie Việt">
+    <meta property="og:description" content="Gửi câu hỏi và đóng góp ý kiến cho Foodie Việt.">
+    <meta property="og:image" content="https://YOUR-USERNAME.github.io/RWD_Lab5_MiniSite/assets/img/optimized/10.webp">
+    <meta property="og:url" content="https://YOUR-USERNAME.github.io/RWD_Lab5_MiniSite/pages/contact.html">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">FV</span>
+                Foodie <span>Việt</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Mở menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="../index.html">Trang chủ</a>
+                <a href="products.html">Món ăn</a>
+                <a href="about.html">Quán ăn</a>
+                <a href="contact.html" class="active">Liên hệ</a>
+                <a href="order.html">Đặt món</a>
+
+                <button class="theme-toggle" id="themeToggle">
+                    🌙 Chế độ tối
+                </button>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- BANNER BACKGROUND -->
+        <section class="contact-page-banner">
+
+            <picture class="contact-banner-picture">
+                <source
+                    srcset="../assets/img/optimized/10.webp"
+                    type="image/webp">
+
+                <img
+                    src="../assets/img/original/10.jpg"
+                    alt="Ẩm thực Foodie Việt">
+            </picture>
+
+            <div class="contact-banner-overlay"></div>
+
+            <div class="container contact-page-banner-content">
+
+                <span class="section-label">FOODIE VIỆT</span>
+
+                <h1>Liên hệ với chúng tôi</h1>
+
+                <p>
+                    Gửi câu hỏi hoặc đóng góp ý kiến cho Foodie Việt.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT INFORMATION AND FORM -->
+        <section class="section">
+
+            <div class="container contact-layout">
+
+                <!-- THÔNG TIN LIÊN HỆ -->
+                <div class="contact-information">
+
+                    <span class="section-label">
+                        THÔNG TIN LIÊN HỆ
+                    </span>
+
+                    <h2>Chúng tôi luôn sẵn sàng hỗ trợ</h2>
+
+                    <p>
+                        Bạn có thể liên hệ với Foodie Việt để tìm hiểu
+                        thông tin về website, quán ăn hoặc đóng góp ý kiến.
+                        Chúng tôi luôn sẵn sàng tiếp nhận những lời nhắn từ bạn.
+                    </p>
+
+
+                    <div class="contact-item">
+
+                        <span class="contact-icon">☎</span>
+
+                        <div>
+                            <h3>Điện thoại</h3>
+                            <p>0900 000 001</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span class="contact-icon">✉</span>
+
+                        <div>
+                            <h3>Email</h3>
+                            <p>foodie@example.com</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span class="contact-icon">📍</span>
+
+                        <div>
+                            <h3>Địa chỉ</h3>
+                            <p>TP. Hồ Chí Minh, Việt Nam</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span class="contact-icon">⏰</span>
+
+                        <div>
+                            <h3>Thời gian hỗ trợ</h3>
+                            <p>08:00 – 21:00 mỗi ngày</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM LIÊN HỆ -->
+                <div class="contact-form-wrapper">
+
+                    <h2>Gửi lời nhắn</h2>
+
+                    <p class="form-description">
+                        Vui lòng điền đầy đủ thông tin bên dưới.
+                    </p>
+
+
+                    <form id="contactMessageForm">
+
+                        <!-- HỌ TÊN -->
+                        <div class="form-group">
+
+                            <label for="contactName">
+                                Họ và tên *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                name="name"
+                                placeholder="Nhập họ và tên"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="form-group">
+
+                            <label for="contactEmail">
+                                Email *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                name="email"
+                                placeholder="example@gmail.com"
+                                autocomplete="email"
+                                required>
+
+                        </div>
+
+
+                        <!-- NỘI DUNG -->
+                        <div class="form-group">
+
+                            <label for="contactMessage">
+                                Nội dung *
+                            </label>
+
+                            <textarea
+                                id="contactMessage"
+                                name="message"
+                                rows="6"
+                                minlength="20"
+                                maxlength="2000"
+                                placeholder="Nhập nội dung liên hệ (ít nhất 20 ký tự)..."
+                                required></textarea>
+
+                            <small class="form-hint">
+                                Nội dung phải có ít nhất 20 ký tự.
+                            </small>
+
+                        </div>
+
+
+                        <!-- NÚT GỬI -->
+                        <button type="submit"
+                                class="btn btn-primary form-submit">
+                            Gửi liên hệ
+                        </button>
+
+
+                        <!-- THÔNG BÁO KẾT QUẢ -->
+                        <p
+                            id="contactSuccess"
+                            class="form-status"
+                            role="status"
+                            aria-live="polite">
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="../index.html" class="logo footer-logo">
+                    <span class="logo-icon">FV</span>
+                    Foodie <span>Việt</span>
+                </a>
+
+                <p>
+                    Khám phá quán ngon – Thưởng thức món ngon.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Liên kết</h3>
+
+                <a href="../index.html">Trang chủ</a>
+                <a href="products.html">Món ăn</a>
+                <a href="about.html">Quán ăn</a>
+                <a href="contact.html">Liên hệ</a>
+                <a href="order.html">Đặt món</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Thông tin liên hệ</h3>
+
+                <p>Hotline: 0900 000 001</p>
+                <p>Email: foodie@example.com</p>
+                <p>TP. Hồ Chí Minh, Việt Nam</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © <span class="current-year">2026</span>
+            Foodie Việt. Website minh họa phục vụ học tập.
+        </div>
+
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+    <button
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Quay lại đầu trang"
+        title="Quay lại đầu trang">
+        ↑
+    </button>
+
+</body>
+</html>
